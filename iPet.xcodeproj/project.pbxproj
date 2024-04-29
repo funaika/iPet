@@ -11,6 +11,10 @@
 		F49089D22BC9A87F00790AAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49089D12BC9A87F00790AAA /* ContentView.swift */; };
 		F49089D42BC9A88000790AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49089D32BC9A88000790AAA /* Assets.xcassets */; };
 		F49089D72BC9A88000790AAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49089D62BC9A88000790AAA /* Preview Assets.xcassets */; };
+		F49089DF2BC9A94000790AAA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49089DE2BC9A94000790AAA /* Helpers.swift */; };
+		F49089E62BC9AA4B00790AAA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49089E52BC9AA4B00790AAA /* ContentViewModel.swift */; };
+		F49089E82BC9AA5700790AAA /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49089E72BC9AA5700790AAA /* PetModel.swift */; };
+		F49089EA2BC9AA6F00790AAA /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49089E92BC9AA6F00790AAA /* PetRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F49089D12BC9A87F00790AAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F49089D32BC9A88000790AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49089D62BC9A88000790AAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F49089DE2BC9A94000790AAA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F49089E52BC9AA4B00790AAA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		F49089E72BC9AA5700790AAA /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		F49089E92BC9AA6F00790AAA /* PetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				F49089CF2BC9A87F00790AAA /* iPetApp.swift */,
-				F49089D12BC9A87F00790AAA /* ContentView.swift */,
+				F49089E02BC9A95600790AAA /* ContentView */,
+				F49089DD2BC9A93100790AAA /* Utils */,
 				F49089D32BC9A88000790AAA /* Assets.xcassets */,
 				F49089D52BC9A88000790AAA /* Preview Content */,
 			);
@@ -65,6 +74,49 @@
 				F49089D62BC9A88000790AAA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F49089DD2BC9A93100790AAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F49089E22BC9A9B500790AAA /* Model */,
+				F49089DE2BC9A94000790AAA /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F49089E02BC9A95600790AAA /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				F49089D12BC9A87F00790AAA /* ContentView.swift */,
+				F49089E12BC9A9A500790AAA /* ViewModel */,
+				F49089E42BC9A9CB00790AAA /* Data */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		F49089E12BC9A9A500790AAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F49089E52BC9AA4B00790AAA /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F49089E22BC9A9B500790AAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F49089E72BC9AA5700790AAA /* PetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F49089E42BC9A9CB00790AAA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F49089E92BC9AA6F00790AAA /* PetRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49089E62BC9AA4B00790AAA /* ContentViewModel.swift in Sources */,
 				F49089D22BC9A87F00790AAA /* ContentView.swift in Sources */,
+				F49089DF2BC9A94000790AAA /* Helpers.swift in Sources */,
+				F49089EA2BC9AA6F00790AAA /* PetRepository.swift in Sources */,
+				F49089E82BC9AA5700790AAA /* PetModel.swift in Sources */,
 				F49089D02BC9A87F00790AAA /* iPetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
